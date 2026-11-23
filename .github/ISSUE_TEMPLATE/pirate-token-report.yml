@@ -1,0 +1,66 @@
+name: "🏴‍☠️ Pirate Token / Treasure Hour Report"
+description: "Report a Treasure Hour window you observed, a token claim, or a drop-feed mismatch."
+title: "[Treasure Hour] YYYY-MM-DD - <region>"
+labels: ["treasure-hour", "community-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Player reports keep the schedule view and heatmap honest. Fill in what you observed —
+        cross-check the [live dashboard](https://fortyworth.com) before submitting.
+  - type: input
+    id: date
+    attributes:
+      label: Date (UTC)
+      placeholder: "2026-11-23"
+    validations:
+      required: true
+  - type: input
+    id: window
+    attributes:
+      label: Observed window start/end (UTC)
+      placeholder: "18:00 - 19:00"
+    validations:
+      required: true
+  - type: dropdown
+    id: badge-live
+    attributes:
+      label: Was the Treasure Hour badge LIVE on fortyworth.com during your match?
+      options:
+        - "Yes"
+        - "No"
+        - "Did not check"
+    validations:
+      required: true
+  - type: dropdown
+    id: route
+    attributes:
+      label: Route run
+      options:
+        - Shoreline Wreckage
+        - Coastal Cave Run
+        - Lagoon Geyser Chain
+        - Other / custom path
+    validations:
+      required: true
+  - type: input
+    id: chests
+    attributes:
+      label: High-tier chests opened
+      placeholder: "e.g. 11"
+    validations:
+      required: true
+  - type: dropdown
+    id: claimed
+    attributes:
+      label: Pirate Token claimed?
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Region/server name, traffic level, anything unusual.

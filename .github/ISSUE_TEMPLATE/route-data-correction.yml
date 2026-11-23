@@ -1,0 +1,46 @@
+name: "🧭 Chest Route Data Correction"
+description: "Report a wrong chest count, POI name, or traffic pattern for one of the tracked routes."
+title: "[Route Data] <route name> - <what is wrong>"
+labels: ["routes", "community-report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Route averages currently tracked: Coastal Cave Run (8-10), Shoreline Wreckage (10-14),
+        Lagoon Geyser Chain (7-9). If your recent runs consistently differ, tell us below.
+  - type: dropdown
+    id: route
+    attributes:
+      label: Route
+      options:
+        - Coastal Cave Run
+        - Shoreline Wreckage
+        - Lagoon Geyser Chain
+        - New route proposal
+    validations:
+      required: true
+  - type: input
+    id: observed
+    attributes:
+      label: Your observed avg. high-tier chests per match
+      placeholder: "e.g. 6 over 5 matches"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Mode played
+      options:
+        - Zero Build Solos
+        - Zero Build Duos
+        - Zero Build Squads
+        - Ranked
+        - Pubs (Build)
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: POI names that changed, traffic level, Treasure Hour active or not, heatmap screenshot link.

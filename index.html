@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — fortyworth.com (unofficial Pirate Token guide)</title>
+<meta name="description" content="Frequently asked questions about fortyworth.com: how the official Epic Games OAuth sign-in works, why we never ask for your password, Pirate Token and Treasure Hour guides. Unofficial fan project, not affiliated with Epic Games, Inc.">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="data:,">
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <strong>&#9875; fortyworth.com</strong>
+        <span class="badge">Unofficial fan project</span>
+      </div>
+      <div class="langbar">
+        <label for="lang-select">&#127760;</label>
+        <select id="lang-select" aria-label="Language">
+          <option value="en">English</option>
+        </select>
+      </div>
+    </div>
+    <h1 id="t-h1">Frequently Asked Questions</h1>
+    <p class="sub" id="t-sub">Pirate Token &middot; Treasure Hour &middot; account safety</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="banner" id="short-version">
+    <h2 id="t-banner-title">&#128274; The short version</h2>
+    <ul id="banner-list">
+      <li><span class="ok">We never ask for your Epic Games password</span> — not on this site, not in email, not in chat. There is no &ldquo;account verification&rdquo; that requires a password.</li>
+      <li>Sign-in happens <span class="ok">only on the official Epic Games page</span> (<code>accounts.epicgames.com</code>) through the standard &ldquo;Sign in with Epic Games&rdquo; (OAuth) flow.</li>
+      <li><span class="no">fortyworth.com is not Epic Games.</span> It is an unofficial fan project — it is not affiliated with, endorsed by, or connected to Epic Games, Inc.</li>
+      <li>If any site, DM, or &ldquo;admin&rdquo; asks for your password or a 2FA code — <span class="no">that is a scam</span>. Close the page and report it.</li>
+    </ul>
+  </div>
+
+  <div class="filter">
+    <label for="q" id="t-search-label">Search the questions</label>
+    <input id="q" type="search" placeholder="e.g. password, OAuth, 2FA, treasure hour&hellip;" autocomplete="off">
+  </div>
+
+  <section id="faq">
+    <details>
+      <summary>Is fortyworth.com part of Epic Games? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>No. fortyworth.com is an independent, unofficial fan project built around the Fortnite Treasure Hunters event and the Pirate Shop Access Token. It is <strong>not affiliated with, endorsed by, sponsored by, or connected to Epic Games, Inc. in any way</strong>, and it does not speak for Epic Games. &ldquo;Fortnite&rdquo; and &ldquo;Epic Games&rdquo; are trademarks of Epic Games, Inc.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Do you need my Epic Games password for anything? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>No — and there is no version of &ldquo;account verification&rdquo; that requires it. A password is only ever typed by <em>you</em>, on <em>Epic&rsquo;s own site</em>, during the official sign-in flow (see the next question). Our site has no password field at all and cannot accept one.</p>
+        <p>If anyone — including someone claiming to be from fortyworth, Epic support, or a &ldquo;verification bot&rdquo; — asks you to hand over your password or a 2FA code, it is <strong>phishing</strong>. Real Epic Games staff will never ask either.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How does &ldquo;Sign in with Epic Games&rdquo; work? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>It uses OAuth, the same official mechanism used by thousands of apps:</p>
+        <ol>
+          <li>You click the <strong>Sign in with Epic Games</strong> button.</li>
+          <li>Your browser is redirected to <code>accounts.epicgames.com</code> — the official Epic Games domain. You enter your credentials <strong>there</strong>, on Epic&rsquo;s page, not on ours.</li>
+          <li>Epic asks which permissions the app requests and you approve them.</li>
+          <li>Epic sends our site a limited access token. It identifies your account (display name / account ID) — <strong>your password never leaves Epic&rsquo;s servers</strong>, because you never type it on our site.</li>
+        </ol>
+        <p>You can revoke access at any time: Epic account &rarr; <strong>Connections &rarr; Apps</strong> &rarr; disconnect the app.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I check that I&rsquo;m on the real Epic login page? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>Look at the address bar before typing anything. The only legitimate Epic login domain is <code>https://accounts.epicgames.com</code> (note the <code>epicgames.com</code> part and the padlock).</p>
+        <p>Lookalike domains — for example <code>ep1c-games-login.com</code>, <code>epicgames.verify-account.xyz</code>, <code>fortyworth-login.net</code> — are fakes. If a site shows a login form <em>on its own page</em> instead of sending you to <code>epicgames.com</code>, do not type anything. When in doubt, open <code>epicgames.com</code> manually and sign in from there.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>Someone asked for my password &ldquo;to verify my account&rdquo;. What do I do? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>Refuse and report. No legitimate service verifies accounts through passwords.</p>
+        <p>If you already shared it:</p>
+        <ol>
+          <li>Change your Epic password immediately at <code>epicgames.com</code>.</li>
+          <li>Enable two-factor authentication (see below).</li>
+          <li>Sign out of all sessions: Account &rarr; Password &amp; Security &rarr; sign out everywhere.</li>
+          <li>Check <strong>Connections &rarr; Apps</strong> and remove anything you do not recognize.</li>
+        </ol>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is the Pirate Token? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>The community name for the <strong>Pirate Shop Access Token</strong> — the event currency of the Treasure Hunters mini-season. You earn it by claiming high-tier Buried Pirate Chests and spend it in the pirate-themed shop. Our step-by-step guide lives in <a href="https://github.com/powerfulrac/fortnite-pirate-token-guide/blob/main/docs/how-to-get-pirate-token-in-fortnite.md">docs/how-to-get-pirate-token-in-fortnite.md</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>What is Treasure Hour? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>A limited window during which the Treasure Hour badge goes live and high-tier chest odds improve. The live tracker is on the <a href="https://fortyworth.com">fortyworth.com homepage</a>; confirmed schedule reports per region are collected in <a href="https://github.com/powerfulrac/fortnite-pirate-token-guide/blob/main/docs/treasure-hour-schedule.md">docs/treasure-hour-schedule.md</a>.</p>
+      </div>
+    </details>
+
+    <details>
+      <summary>How do I secure my Epic account? <span class="chev">&#9662;</span></summary>
+      <div class="answer">
+        <p>Four steps, five minutes:</p>
+        <ol>
+          <li>Turn on 2FA: <code>epicgames.com</code> &rarr; log in &rarr; Account &rarr; <strong>Password &amp; Security &rarr; Two-Factor Authentication</strong>. An authenticator app is the strongest option; email and SMS also work.</li>
+          <li>Use a unique password that you do not reuse anywhere else.</li>
+          <li>Never enter your password anywhere except <code>epicgames.com</code>.</li>
+          <li>Review <strong>Connections &rarr; Apps</strong> now and then and remove apps you no longer use.</li>
+        </ol>
+      </div>
+    </details>
+  </section>
+  <p id="none">Nothing matched your search — try a shorter word.</p>
+
+  <h2 class="sec" id="t-checklist">Account safety checklist</h2>
+  <div class="cards" id="cards">
+    <div class="card">
+      <h3><span class="num">1.</span> Never share your password</h3>
+      <p>Not with &ldquo;admins&rdquo;, &ldquo;support&rdquo;, &ldquo;verification bots&rdquo;, streamers, or friends. Nobody legitimate will ever ask.</p>
+    </div>
+    <div class="card">
+      <h3><span class="num">2.</span> Check the domain</h3>
+      <p>The only real Epic login page is <code>accounts.epicgames.com</code>. Everything else that asks for credentials is fake.</p>
+    </div>
+    <div class="card">
+      <h3><span class="num">3.</span> Turn on 2FA</h3>
+      <p>Epic account &rarr; Password &amp; Security &rarr; Two-Factor Authentication. A 2FA code is a key to your account — never tell it to anyone.</p>
+    </div>
+    <div class="card">
+      <h3><span class="num">4.</span> Review your connections</h3>
+      <p>Account &rarr; Connections &rarr; Apps. Disconnect anything you do not use or do not recognize.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p id="t-disclaimer"><strong>Disclaimer:</strong> fortyworth.com is an unofficial fan project. It is not affiliated with, endorsed by, sponsored by, or connected to Epic Games, Inc. &ldquo;Fortnite&rdquo;, &ldquo;Epic Games&rdquo; and their logos are trademarks of Epic Games, Inc.</p>
+    <p><span id="t-flabel-guides">Guides and community data:</span> <a href="https://github.com/powerfulrac/fortnite-pirate-token-guide">GitHub repository</a> &middot; <span id="t-flabel-tracker">Live tracker:</span> <a href="https://fortyworth.com">fortyworth.com</a> &middot; <span id="t-flabel-official">Official Epic Games site:</span> <a href="https://www.epicgames.com">epicgames.com</a></p>
+  </footer>
+
+</main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is fortyworth.com part of Epic Games?",
+     "acceptedAnswer": {"@type": "Answer", "text": "No. fortyworth.com is an independent, unofficial fan project. It is not affiliated with, endorsed by, sponsored by, or connected to Epic Games, Inc. in any way. Fortnite and Epic Games are trademarks of Epic Games, Inc."}},
+    {"@type": "Question", "name": "Do you need my Epic Games password for anything?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Never. There is no account verification that requires a password. A password is only typed by you on Epic's official site during the OAuth sign-in. Anyone asking for your password or a 2FA code — including fake 'admins' or 'verification bots' — is running a phishing scam."}},
+    {"@type": "Question", "name": "How does Sign in with Epic Games work?",
+     "acceptedAnswer": {"@type": "Answer", "text": "The site uses the official Epic Games OAuth flow: you are redirected to accounts.epicgames.com, sign in there, and Epic sends the app a limited token that identifies your account. Your password never leaves Epic's servers. Access can be revoked any time under Account, Connections, Apps."}},
+    {"@type": "Question", "name": "How do I check that I am on the real Epic login page?",
+     "acceptedAnswer": {"@type": "Answer", "text": "The address bar must show https://accounts.epicgames.com with a padlock. Lookalike domains are phishing. If a login form appears on the site's own page instead of sending you to epicgames.com, do not type anything."}},
+    {"@type": "Question", "name": "How do I secure my Epic account?",
+     "acceptedAnswer": {"@type": "Answer", "text": "Enable two-factor authentication (Account, Password & Security, Two-Factor Authentication), use a unique password, enter it only on epicgames.com, and review Connections, Apps regularly."}}
+  ]
+}
+</script>
+
+<script src="js/i18n.js" defer></script>
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

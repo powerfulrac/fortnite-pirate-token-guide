@@ -1,0 +1,109 @@
+/* fortyworth.com FAQ — единые стили сайта (index.html + rendered/*.html) */
+:root{
+  --bg:#0b1220; --card:#111a2e; --line:#24344f;
+  --text:#e8eefc; --muted:#9fb0d1; --gold:#f5b942; --teal:#4fd1c5;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text); line-height:1.65;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+.wrap{max-width:60rem; margin:0 auto; padding:clamp(1rem,4vw,2.5rem)}
+header.bar{border-bottom:1px solid var(--line)}
+.topbar{display:flex; justify-content:space-between; align-items:center; gap:1rem; flex-wrap:wrap; padding-top:1rem}
+.brand{display:flex; align-items:baseline; gap:.6rem; flex-wrap:wrap}
+.brand strong{font-size:clamp(1.1rem,3vw,1.4rem); color:var(--gold)}
+.brand a{color:var(--muted); text-decoration:none; font-size:.9rem}
+.brand a:hover{color:var(--gold)}
+.badge{
+  font-size:.78rem; letter-spacing:.04em; text-transform:uppercase;
+  color:var(--muted); border:1px solid var(--line); border-radius:999px;
+  padding:.15rem .7rem;
+}
+.langbar{display:flex; align-items:center; gap:.5rem; color:var(--muted); font-size:.9rem}
+.langbar select{
+  background:var(--card); color:var(--text); border:1px solid var(--line);
+  border-radius:8px; padding:.4rem .6rem; font-size:.92rem; max-width:11rem;
+}
+.langbar select:focus{outline:2px solid var(--gold)}
+h1{font-size:clamp(1.8rem,6vw,3rem); line-height:1.15; margin:.4rem 0 .6rem}
+.sub{color:var(--muted); font-size:clamp(.95rem,2.5vw,1.1rem); margin:0}
+.banner{
+  background:#152238; border:1px solid rgba(245,185,66,.35);
+  border-left:4px solid var(--gold); border-radius:12px;
+  padding:clamp(1rem,3vw,1.5rem); margin:2rem 0 1rem;
+}
+.banner h2{margin:0 0 .7rem; font-size:clamp(1.1rem,3vw,1.4rem)}
+.banner ul{margin:.3rem 0 0; padding-left:1.2rem}
+.banner li{margin:.35rem 0}
+.ok{color:var(--teal); font-weight:600}
+.no{color:#ff8080; font-weight:600}
+kbd,code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  background:#0d1729; border:1px solid var(--line); border-radius:6px;
+  padding:.05rem .4rem; font-size:.92em; word-break:break-all;
+}
+.filter{margin:1.6rem 0 .6rem}
+.filter label{display:block; color:var(--muted); font-size:.9rem; margin-bottom:.4rem}
+.filter input{
+  width:100%; max-width:100%; padding:.7rem .9rem; font-size:1rem;
+  background:var(--card); color:var(--text);
+  border:1px solid var(--line); border-radius:10px;
+}
+.filter input:focus{outline:2px solid var(--gold); border-color:var(--gold)}
+details{
+  border:1px solid var(--line); border-radius:10px;
+  background:var(--card); margin:.6rem 0;
+}
+summary{
+  cursor:pointer; list-style:none; display:flex;
+  justify-content:space-between; align-items:center; gap:1rem;
+  padding:1rem 1.2rem; font-weight:600; font-size:clamp(1rem,2.6vw,1.08rem);
+}
+summary::-webkit-details-marker{display:none}
+summary:focus-visible{outline:2px solid var(--gold); border-radius:10px}
+.chev{flex:none; color:var(--gold); transition:transform .2s}
+details[open] .chev{transform:rotate(180deg)}
+.answer{padding:0 1.2rem 1.2rem; color:#c6d2ea}
+.answer a{color:var(--gold)}
+#none{color:var(--muted); padding:1rem 0; display:none}
+h2.sec{
+  font-size:clamp(1.25rem,3.6vw,1.7rem); margin:2.4rem 0 1rem;
+  padding-top:1.2rem; border-top:1px solid var(--line);
+}
+.cards{display:grid; gap:1rem; grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+.card{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:1.1rem 1.2rem}
+.card h3{margin:.1rem 0 .5rem; font-size:1.02rem}
+.card p{margin:0; color:var(--muted); font-size:.94rem}
+.num{color:var(--gold); font-weight:700}
+footer{
+  border-top:1px solid var(--line); margin-top:2.5rem; color:var(--muted);
+  font-size:.88rem;
+}
+footer p{margin:.5rem 0}
+footer a{color:var(--gold)}
+
+/* --- страницы гайдов (rendered/*.html) --- */
+article{padding-bottom:1rem}
+article h1{margin-top:1.2rem}
+article h2{
+  font-size:clamp(1.2rem,3.4vw,1.6rem); margin:2rem 0 .8rem;
+  padding-top:1rem; border-top:1px solid var(--line);
+}
+article h3{font-size:clamp(1.05rem,3vw,1.25rem); margin:1.4rem 0 .6rem}
+article p{color:#cdd8ee}
+article a{color:var(--gold)}
+article ul,article ol{padding-left:1.4rem}
+article li{margin:.3rem 0}
+article blockquote{
+  margin:1.2rem 0; padding:.9rem 1.2rem; color:#c6d2ea;
+  background:#152238; border-left:4px solid var(--teal); border-radius:10px;
+}
+article table{
+  width:100%; border-collapse:collapse; margin:1.2rem 0; font-size:.95rem;
+}
+article th,article td{
+  border:1px solid var(--line); padding:.55rem .8rem; text-align:left;
+}
+article th{background:var(--card); color:var(--text)}
+.pagefooter{color:var(--muted)}

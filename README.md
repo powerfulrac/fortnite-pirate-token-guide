@@ -21,6 +21,14 @@ value scan, and Buried Pirate Chest routes for the Treasure Hunters mini-season.
 
 ---
 
+## 🌐 This guide in 11 languages
+
+**🌐 Languages:** [🇬🇧 English](README.md) · [🇧🇷 Português](README.pt-BR.md) · [🇪🇸 Español](README.es.md) · [🇩🇪 Deutsch](README.de.md) · [🇫🇷 Français](README.fr.md) · [🇮🇹 Italiano](README.it.md) · [🇹🇷 Türkçe](README.tr.md) · [🇵🇱 Polski](README.pl.md) · [🇯🇵 日本語](README.ja.md) · [🇰🇷 한국어](README.ko.md) · [🇨🇳 中文](README.zh-CN.md)
+
+Every language has a localized README plus a translated step-by-step guide in `docs/<lang>/` — same numbers, same routes, same safety rules.
+
+---
+
 ## 🪙 Get Pirate Token Now
 
 <div align="center">
@@ -200,6 +208,18 @@ grants lasts **14 days from claim**, but cosmetics you claim inside that window 
 permanently.
 
 </details>
+
+---
+
+## 🌍 Website (GitHub Pages)
+
+The repo root doubles as a static site, ready for GitHub Pages:
+
+- `index.html` — the FAQ page in **12 languages** with a switcher (`css/style.css`, `js/main.js`, `js/i18n.js`)
+- `rendered/` — HTML versions of all five guides, linked from the sitemap
+- `robots.txt` + `sitemap.xml` — search engine files (canonical host: fortyworth.com)
+
+Enable it: **Settings → Pages → Deploy from a branch → main / (root)**. For a custom domain, add it under Pages and point DNS at GitHub. The `google*.html` Search Console verification file must come from **your own** Search Console account — place it in the root next to `index.html` (never copy someone else's).
 
 ---
 

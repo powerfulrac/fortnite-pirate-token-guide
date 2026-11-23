@@ -73,3 +73,7 @@ Work through this checklist in order:
 - [Treasure Hour Schedule & Live Timer](treasure-hour-schedule.md)
 - [Buried Pirate Chest Routes — Crossbones Island](chest-routes.md)
 - [How to Check Your Fortnite Locker Value & Account Worth](locker-value.md)
+
+---
+
+**Account safety:** This project never asks for your Epic Games password, and no “account verification” needs one. Sign-in happens only on `accounts.epicgames.com` (official OAuth). Anyone asking for your password or a 2FA code is phishing — report and close.
